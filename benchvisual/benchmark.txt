@@ -1,0 +1,10 @@
+goos: darwin
+goarch: arm64
+pkg: echo
+cpu: Apple M1
+BenchmarkEchoAll1-8   	  271656	      4631 ns/op	   21080 B/op	      99 allocs/op
+BenchmarkEchoAll2-8   	  224186	      5874 ns/op	   31560 B/op	      99 allocs/op
+BenchmarkEchoAll3-8   	 1273263	       836.1 ns/op	     640 B/op	       1 allocs/op
+BenchmarkEchoAll4-8   	 1457311	       809.8 ns/op	    1912 B/op	       8 allocs/op
+PASS
+ok  	echo	9.128s

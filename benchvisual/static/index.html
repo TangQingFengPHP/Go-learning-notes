@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Go Benchmark 可视化</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+<h2>Go Benchmark 可视化结果</h2>
+<select id="metric-select">
+    <option value="ns_per_op">ns/op</option>
+    <option value="bytes_per_op">B/op</option>
+    <option value="allocs_per_op">allocs/op</option>
+</select>
+<canvas id="benchmarkChart" width="900" height="500"></canvas>
+</body>
+</html>
