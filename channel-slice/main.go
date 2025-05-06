@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	slice := []int{}
+	var slice []int
 	ch := make(chan int)
 	var wg sync.WaitGroup
 
