@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Table</title>
+    <style>
+        table { border-collapse: collapse; width: 100%; }
+        th, td { padding: 8px; border: 1px solid #ccc; text-align: left; }
+    </style>
+</head>
+<body>
+<h1>User List (Page {{.Page}})</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th><th>Name</th><th>Email</th><th>Age</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{range .Users}}
+    <tr>
+        <td>{{.ID}}</td><td>{{.Name}}</td><td>{{.Email}}</td><td>{{.Age}}</td>
+    </tr>
+    {{end}}
+    </tbody>
+</table>
+<p>
+    <a href="/?page={{.PrevPage}}">Prev</a> |
+    <a href="/?page={{.NextPage}}">Next</a>
+</p>
+</body>
+</html>
